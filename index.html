@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="150+ Stylish Name Generator for Gaming, Free Fire, Instagram, Logos and Social Media."
+    >
+
+    <meta
+        name="theme-color"
+        content="#7040f5"
+    >
+
+    <title>
+        ✨ StyleName - Stylish Name Generator
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header class="header">
+
+    <div class="logo">
+        ✨ StyleName
+    </div>
+
+
+    <nav>
+
+        <a href="#generator">
+            Generator
+        </a>
+
+        <a href="#styles">
+            Styles
+        </a>
+
+        <a href="#logos">
+            Logos
+        </a>
+
+    </nav>
+
+
+    <button
+        id="themeBtn"
+        class="theme-btn"
+        aria-label="Dark Mode"
+    >
+        🌙
+    </button>
+
+</header>
+
+
+
+<!-- =========================
+     MAIN
+========================= -->
+
+<main>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section
+    class="hero"
+    id="generator"
+>
+
+    <div class="badge">
+        ✨ 150+ STYLES • FREE • NO LOGIN
+    </div>
+
+
+    <h1>
+
+        अपना नाम बनाओ
+
+        <span>
+            Stylish
+        </span>
+
+        😎
+
+    </h1>
+
+
+    <p>
+
+        Free Fire, Gaming, Instagram,
+        Logos, Symbols और Social Media
+        के लिए stylish names बनाएं।
+
+    </p>
+
+
+    <!-- NAME SEARCH / INPUT -->
+
+    <div class="generator-box">
+
+        <input
+            type="text"
+            id="nameInput"
+            maxlength="30"
+            placeholder="अपना नाम लिखें..."
+            autocomplete="off"
+        >
+
+
+        <button
+            id="generateBtn"
+        >
+            ✨ Generate
+        </button>
+
+    </div>
+
+
+    <!-- QUICK NAMES -->
+
+    <div class="quick-names">
+
+        <button data-name="Aashish">
+            Aashish
+        </button>
+
+        <button data-name="Raja">
+            Raja
+        </button>
+
+        <button data-name="Hunter">
+            Hunter
+        </button>
+
+        <button data-name="King">
+            King
+        </button>
+
+        <button data-name="Gaming">
+            Gaming
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     AD
+========================= -->
+
+<div class="ad-box">
+    Advertisement
+</div>
+
+
+
+<!-- =========================
+     STYLES
+========================= -->
+
+<section id="styles">
+
+
+    <div class="toolbar">
+
+
+        <div>
+
+            <h2>
+                🔥 Stylish Names
+            </h2>
+
+            <span id="styleCount">
+                0 Styles
+            </span>
+
+        </div>
+
+
+        <input
+            type="search"
+            id="searchInput"
+            class="search"
+            placeholder="🔎 Style Search..."
+            autocomplete="off"
+        >
+
+    </div>
+
+
+
+    <!-- =========================
+         CATEGORIES
+    ========================= -->
+
+    <div class="categories">
+
+
+        <button
+            class="category active"
+            data-category="all"
+        >
+            ✨ All
+        </button>
+
+
+        <button
+            class="category"
+            data-category="gaming"
+        >
+            🎮 Gaming
+        </button>
+
+
+        <button
+            class="category"
+            data-category="logo"
+            id="logos"
+        >
+            🔰 Logos
+        </button>
+
+
+        <button
+            class="category"
+            data-category="king"
+        >
+            👑 King / Queen
+        </button>
+
+
+        <button
+            class="category"
+            data-category="love"
+        >
+            ❤️ Love
+        </button>
+
+
+        <button
+            class="category"
+            data-category="attitude"
+        >
+            😈 Attitude
+        </button>
+
+
+        <button
+            class="category"
+            data-category="symbol"
+        >
+            ⚡ Symbols
+        </button>
+
+
+        <button
+            class="category"
+            data-category="star"
+        >
+            ⭐ Stars
+        </button>
+
+
+        <button
+            class="category"
+            data-category="simple"
+        >
+            🖤 Simple
+        </button>
+
+
+        <button
+            class="category"
+            data-category="emoji"
+        >
+            😎 Emoji
+        </button>
+
+
+    </div>
+
+
+
+    <!-- =========================
+         RESULTS
+    ========================= -->
+
+    <div
+        id="results"
+        class="results"
+    >
+    </div>
+
+
+    <div
+        id="noResult"
+        class="no-result"
+    >
+
+        😕 कोई style नहीं मिला।
+
+        <br>
+
+        दूसरा नाम या category try करें।
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================
+     AD
+========================= -->
+
+<div class="ad-box">
+    Advertisement
+</div>
+
+
+
+<!-- =========================
+     FEATURES
+========================= -->
+
+<section class="features">
+
+
+    <div class="feature-card">
+
+        <div class="feature-icon">
+            🎮
+        </div>
+
+        <h3>
+            Gaming Names
+        </h3>
+
+        <p>
+            Free Fire और दूसरे games
+            के लिए stylish names।
+        </p>
+
+    </div>
+
+
+
+    <div class="feature-card">
+
+        <div class="feature-icon">
+            🔰
+        </div>
+
+        <h3>
+            Logo Names
+        </h3>
+
+        <p>
+            अलग-अलग logo और icon
+            style names।
+        </p>
+
+    </div>
+
+
+
+    <div class="feature-card">
+
+        <div class="feature-icon">
+            📋
+        </div>
+
+        <h3>
+            One Click Copy
+        </h3>
+
+        <p>
+            पसंद आया नाम तुरंत
+            Copy करें।
+        </p>
+
+    </div>
+
+
+
+    <div class="feature-card">
+
+        <div class="feature-icon">
+            🔗
+        </div>
+
+        <h3>
+            Share
+        </h3>
+
+        <p>
+            Stylish name अपने
+            दोस्तों के साथ Share करें।
+        </p>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =========================
+     INFORMATION
+========================= -->
+
+<section class="info">
+
+    <h2>
+        ✨ Stylish Name Generator
+    </h2>
+
+
+    <p>
+
+        अपना नाम लिखें और अलग-अलग
+        stylish designs देखें।
+
+        Gaming, Free Fire, Instagram,
+        Logos, Symbols, King, Love,
+        Attitude और कई दूसरी categories
+        उपलब्ध हैं।
+
+    </p>
+
+
+    <p>
+
+        किसी भी नाम को एक क्लिक में
+        Copy या Share किया जा सकता है।
+
+    </p>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        ✨ StyleName
+    </div>
+
+
+    <p>
+        Stylish Names • Gaming • Logos • Symbols
+    </p>
+
+
+    <div class="footer-links">
+
+        <a href="#generator">
+            Home
+        </a>
+
+        <a href="#styles">
+            Styles
+        </a>
+
+        <a href="#logos">
+            Logos
+        </a>
+
+    </div>
+
+
+    <p class="copyright">
+        © 2026 StyleName
+    </p>
+
+</footer>
+
+
+</main>
+
+
+
+<!-- =========================
+     TOAST
+========================= -->
+
+<div
+    id="toast"
+    class="toast"
+>
+</div>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
